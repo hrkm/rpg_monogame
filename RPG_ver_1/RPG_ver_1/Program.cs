@@ -1,10 +1,10 @@
 #region Using Statements
+
 using System;
-using System.Collections.Generic;
-using System.Linq;
+
 #endregion
 
-namespace RPG_ver_0
+namespace RPG_ver_1
 {
     /// <summary>
     /// G³ówna klasa aplikacji.

@@ -2,9 +2,8 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using RPG_ver_1;
 
-namespace RPG_ver_0
+namespace RPG_ver_1
 {
     /// <summary>
     /// To jest g³ówna klasa aplikacji
