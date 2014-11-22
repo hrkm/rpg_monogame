@@ -73,7 +73,8 @@ namespace RPG_ver_3
             particle.Position.Y += r.Next(-20, 20);
             particle.Position.X += r.Next(-20, 20);
             particle.Scale = r.Next(20, 30) / 100.0f;
-            particle.Rotation = r.Next(360) * 180 / (float)Math.PI;
+            //kąt w radianach = kąt w stopniach * PI / 180
+            particle.Rotation = r.Next(360) * (float)Math.PI / 180;
             return particle;
         }
     }

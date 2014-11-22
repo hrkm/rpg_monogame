@@ -204,7 +204,7 @@ public void AddBehaviour(IBehaviour behaviour)
 }
 ```
 
-I jak widać w tej funkcji przy dodawaniu nowego obiektu `IBehaviour` dodajemy go do listy zachowań, do listy obiektów implementujących interfejs `IUpdateable` (bo każde zachowanie musi implementować ten interfejs) i dodatkowo sprawdzmy, czy przypadkiem przekazane zachowanie nie implementuje również interfejsu `IDrawable`. Przed chwilą zdefiniowaliśmy zachowanie implementujące ten interfejs, więc dodanie go do dowolnego obiektu gry spowoduje automatyczne dodanie tego zachowania również do listy obiektów rysowanych na planszy z poziomu tego obiektu. Tworzymy w ten sposób prostą hierarchię obiektów, trochę podobnie do wzorca kompozytu. Oczywiście jeśli obiekt klasy `GameObject` do którego podpinamy to zachowanie zostanie usunięty, to również cząsteczki ulegną zniszczeniu.
+I jak widać w tej funkcji przy dodawaniu nowego obiektu `IBehaviour` dodajemy go do listy zachowań, do listy obiektów implementujących interfejs `IUpdateable` (bo każde zachowanie musi implementować ten interfejs) i dodatkowo sprawdzamy, czy przypadkiem przekazane zachowanie nie implementuje również interfejsu `IDrawable`. Przed chwilą zdefiniowaliśmy zachowanie implementujące ten interfejs, więc dodanie go do dowolnego obiektu gry spowoduje automatyczne dodanie tego zachowania również do listy obiektów rysowanych na planszy z poziomu tego obiektu. Tworzymy w ten sposób prostą hierarchię obiektów, trochę podobnie do wzorca kompozytu. Oczywiście jeśli obiekt klasy `GameObject` do którego podpinamy to zachowanie zostanie usunięty, to również cząsteczki ulegną zniszczeniu.
 
 Dla porządku podaje również implementację metody `CreateParticle`, która została dodana do `GameObjectFactory`:
 
@@ -225,7 +225,8 @@ public static GameObject CreateParticle(Vector2 position)
 	particle.Position.Y += r.Next(-20, 20);
 	particle.Position.X += r.Next(-20, 20);
 	particle.Scale = r.Next(20, 30) / 100.0f;
-	particle.Rotation = r.Next(360) * 180 / (float)Math.PI;
+	//kąt w radianach = kąt w stopniach * PI / 180
+	particle.Rotation = r.Next(360) * (float)Math.PI / 180;
 	return particle;
 }
 ```
