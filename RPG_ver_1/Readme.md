@@ -101,11 +101,11 @@ Skorzystajmy z nowo zdefiniowanej klasy `GameObject` i rozszerzmy jej możliwoś
 public interface IBehaviour
 {
 	void Update(GameTime gameTime);
-	void Apply();
+	void Apply(GameObject gameObject);
 }
 ```
 
-Interfejs ten definiuje tylko dwie metody. `Update` ma na celu aktualizacje stanu zachowania, z kolei `Apply` powoduje zastosowanie zachowania do obiektu. Dopiero jednak implementacja specyficznego określi co to oznacza.
+Interfejs ten definiuje tylko dwie metody. `Update` ma na celu aktualizacje stanu zachowania, z kolei `Apply` powoduje zastosowanie zachowania do obiektu. Dopiero jednak implementacja specyficznego zachowania określi co to oznacza.
 
 Zatem chcemy teraz utworzyć zachowanie określające skok postaci (którą obecnie jest wystąpienie klasy `GameObject`). W tym celu dodajmy poniższą klasę:
 
