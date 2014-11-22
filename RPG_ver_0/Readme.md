@@ -78,7 +78,7 @@ if (position.Y < 700)
 	position.Y += (float)gameTime.ElapsedGameTime.TotalSeconds*100;
 ```
 	
-Zauważmy, że powyższy zapis oznacza przesuwanie współrzędnej X wektora `position` o 100 pikseli na sekundę. W tym celu wykorzystywana jest zmienna `gameTime.ElapsedGameTime.TotalSeconds` podająca liczbę sekund, która upłynęła od ostatniego wywołania funkcji `Update`.
+Zauważmy, że powyższy zapis oznacza przesuwanie współrzędnej Y wektora `position` o 100 pikseli na sekundę. W tym celu wykorzystywana jest zmienna `gameTime.ElapsedGameTime.TotalSeconds` podająca liczbę sekund, która upłynęła od ostatniego wywołania funkcji `Update`.
 
 ##Obsługa klawiatury
 
