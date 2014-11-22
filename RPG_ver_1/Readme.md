@@ -319,7 +319,7 @@ foreach (var gameObject in obstacles)
 
 ##Prosty system kolizji
 
-Najprościej kolizcje można sprawdzać działając na obiektach typu prostokąty lub koła. W naszej aplikacji zastosujemy kolizcję stosując te drugie figury.
+Najprościej kolizje można sprawdzać działając na obiektach typu prostokąty lub koła. W naszej aplikacji zastosujemy kolizję stosując te drugie figury.
 
 Na początek dodajmy do klasy `GameObject` pole definiujące promień koła, który będzie wykorzystany przy teście na kolizję:
 
