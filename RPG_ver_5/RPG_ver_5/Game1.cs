@@ -123,6 +123,9 @@ namespace RPG_ver_5
         protected override void Update(GameTime gameTime)
         {
             // TODO: dodaj logikê gry w tym miejscu
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
+                Exit();
+
             var mouseState = Mouse.GetState();
             mouse.Position = new Vector2(mouseState.X, mouseState.Y);
             mouse.Update(gameTime);
