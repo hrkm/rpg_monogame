@@ -1,5 +1,7 @@
 #RPG_ver_4 - wydzielenie obecnej rozgrywki do osobnej klasy, dodanie losowości
 
+Uwaga: projekt RPG_ver_4 korzysta z folderu "packages" projektu RPG_ver_0 w celu zaoszczędzenia miejsca. W związku z tym zaleca się ściągnięcie całego repozytorium lub dodanie MonoGame przy pomocy NuGeta.
+
 ##Wydzielenie obecnej rozgrywki do osobnej klasy
 
 Do tej pory gra polegała na tym, że skaczemy pojedynczym kwadratem unikając czarnych gwiazdek i zbierając gwiazdki żółte. Docelowo chcielibyśmy mieć trzy takie linie. Najprościej będzie to osiągnąć poprzez wydzielenie większości elementów z obecnej implementacji klasy `Game1` do osobnej klasy.
