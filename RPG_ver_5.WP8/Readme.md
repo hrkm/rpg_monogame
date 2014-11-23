@@ -57,7 +57,7 @@ public partial class MainPage : PhoneApplicationPage
 
 I nie trzeba nic więcej dodawać aby gra zadziałała. Możemy więc po prostu kliknąć debuguj i cieszyć się z działającej gry. :)
 
-##Dodatkowe zmiany z projekcie RPG_ver_5
+##Dodatkowe zmiany w projekcie RPG_ver_5
 
 Na platformie mobilnej nie ma kursora myszy, więc w funkcji `Draw` dodajemy dyrektywę preprocesora, która wytnie tą instrukcję jeśli kompilujemy wersję dla tej platformy:
 
