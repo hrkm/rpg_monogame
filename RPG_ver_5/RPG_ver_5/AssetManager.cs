@@ -48,8 +48,9 @@ namespace RPG_ver_5
             Font = content.Load<SpriteFont>("font");
             Star = content.Load<Texture2D>("star");
             Mouse = content.Load<Texture2D>("mouse");
-            //TODO: odkomentować dla platformy mobilnej, w wersji desktop tylko WAVE
-            //BackgroundMusic = content.Load<Song>("Rolemusic_-_pl4y1ng");
+#if WINDOWS_PHONE
+            BackgroundMusic = content.Load<Song>("Rolemusic_-_pl4y1ng");
+#endif
             Hit = content.Load<SoundEffect>("hit");
             Jump = content.Load<SoundEffect>("jump");
             PickUp = content.Load<SoundEffect>("pickup");

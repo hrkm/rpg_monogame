@@ -248,7 +248,7 @@ Dodajmy wpierw do folderu `Content` pliki .xnb ze skompilowanymi dźwiękami ora
 
 	UWAGA: wersja MonoGame dla projektów desktop nie wspiera obiektów `Song` w formacie innym niż WAV, ale wersje dla platform mobilnych już wspierają. Dlatego na razie dodamy kod w postaci zakomentowanej dla odtwarzania muzyki w tle.
 	
-Teraz w klasie `JumpBehaviour` możemy odtworzyć dźwięk skoku w następujący sposów:
+Teraz w klasie `JumpBehaviour` możemy odtworzyć dźwięk skoku w następujący sposób:
 
 ```
 AssetManager.Instance.Jump.Play();

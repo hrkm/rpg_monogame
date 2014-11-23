@@ -58,7 +58,9 @@ namespace RPG_ver_5
 
             NewGame();
 
-            //MediaPlayer.Play(AssetManager.Instance.BackgroundMusic);
+#if WINDOWS_PHONE
+            MediaPlayer.Play(AssetManager.Instance.BackgroundMusic);
+#endif
         }
 
         /// <summary>
@@ -161,7 +163,7 @@ namespace RPG_ver_5
                         touchLocation.Position = tl.Position;
                         foreach (var singleLine in lines)
                         {
-                            if (mouse.CollidesWith(singleLine.Character))
+                            if (touchLocation.CollidesWith(singleLine.Character))
                             {
                                 singleLine.Jump();
                             }
@@ -213,12 +215,18 @@ namespace RPG_ver_5
             {
                 singleLine.Draw(gameTime, spriteBatch);   
             }
-            spriteBatch.DrawString(AssetManager.Instance.Font, Score.ToString(), new Vector2(6,6), Color.White);
-            if (GameOver)
-                spriteBatch.DrawString(AssetManager.Instance.Font, "Game Over", new Vector2(6, 300), Color.White);
 
-            
+            var m = AssetManager.Instance.Font.MeasureString(Score.ToString());
+            spriteBatch.DrawString(AssetManager.Instance.Font, Score.ToString(), new Vector2(240 - m.X/2, 6), Color.White);
+            if (GameOver)
+            {
+                m = AssetManager.Instance.Font.MeasureString("Game Over");
+                spriteBatch.DrawString(AssetManager.Instance.Font, "Game Over", new Vector2(240 - m.X/2, 300), Color.White);
+            }
+
+#if !WINDOWS_PHONE
             mouse.Draw(gameTime, spriteBatch);
+#endif
 
             spriteBatch.End();
 
