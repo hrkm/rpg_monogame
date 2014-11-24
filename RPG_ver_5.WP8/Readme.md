@@ -89,3 +89,11 @@ Dodatkowo w celu obsługi klawisza "Back" dodajemy w metodzie `Update`:
 if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
 	Exit();
 ```
+
+Oczywiście warunki w dyrektywach preprocesora można łączyć:
+
+```
+#if WINDOWS_PHONE && ANDROID
+	...
+#endif
+```

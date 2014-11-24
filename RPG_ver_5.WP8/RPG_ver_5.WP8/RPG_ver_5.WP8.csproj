@@ -127,9 +127,6 @@
     <Compile Include="..\..\RPG_ver_5\RPG_ver_5\ParticleSystem.cs">
       <Link>ParticleSystem.cs</Link>
     </Compile>
-    <Compile Include="..\..\RPG_ver_5\RPG_ver_5\Program.cs">
-      <Link>Program.cs</Link>
-    </Compile>
     <Compile Include="..\..\RPG_ver_5\RPG_ver_5\RandomBehaviour.cs">
       <Link>RandomBehaviour.cs</Link>
     </Compile>
