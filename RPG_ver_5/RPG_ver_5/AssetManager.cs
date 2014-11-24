@@ -48,7 +48,7 @@ namespace RPG_ver_5
             Font = content.Load<SpriteFont>("font");
             Star = content.Load<Texture2D>("star");
             Mouse = content.Load<Texture2D>("mouse");
-#if WINDOWS_PHONE
+#if WINDOWS_PHONE || ANDROID
             BackgroundMusic = content.Load<Song>("Rolemusic_-_pl4y1ng");
 #endif
             Hit = content.Load<SoundEffect>("hit");

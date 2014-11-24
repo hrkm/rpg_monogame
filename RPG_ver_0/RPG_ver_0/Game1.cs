@@ -20,6 +20,10 @@ namespace RPG_ver_0
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            graphics.PreferredBackBufferWidth = 480;
+            graphics.PreferredBackBufferHeight = 800;
+            graphics.SupportedOrientations = DisplayOrientation.Portrait;
         }
 
         /// <summary>
@@ -29,11 +33,6 @@ namespace RPG_ver_0
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: dodaj logikê inicjalizuj¹c¹ dzia³anie aplikacji
-            graphics.PreferredBackBufferWidth = 480;
-            graphics.PreferredBackBufferHeight = 800;
-            graphics.SupportedOrientations = DisplayOrientation.Portrait;
-
             base.Initialize();
         }
 

@@ -25,6 +25,11 @@ namespace RPG_ver_5
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            graphics.SupportedOrientations = DisplayOrientation.Portrait;
+            graphics.IsFullScreen = true;
+            graphics.PreferredBackBufferWidth = 480;
+            graphics.PreferredBackBufferHeight = 800;
         }
 
         /// <summary>
@@ -35,10 +40,6 @@ namespace RPG_ver_5
         protected override void Initialize()
         {
             // TODO: dodaj logikê inicjalizuj¹c¹ dzia³anie aplikacji
-            graphics.PreferredBackBufferWidth = 480;
-            graphics.PreferredBackBufferHeight = 800;
-            graphics.SupportedOrientations = DisplayOrientation.Portrait;
-
             base.Initialize();
         }
 
@@ -58,7 +59,7 @@ namespace RPG_ver_5
 
             NewGame();
 
-#if WINDOWS_PHONE
+#if WINDOWS_PHONE || ANDROID
             MediaPlayer.Play(AssetManager.Instance.BackgroundMusic);
 #endif
         }
@@ -227,7 +228,7 @@ namespace RPG_ver_5
                 spriteBatch.DrawString(AssetManager.Instance.Font, "Game Over", new Vector2(240 - m.X/2, 300), Color.White);
             }
 
-#if !WINDOWS_PHONE
+#if !WINDOWS_PHONE && !ANDROID
             mouse.Draw(gameTime, spriteBatch);
 #endif
 
