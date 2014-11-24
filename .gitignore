@@ -154,3 +154,4 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/RPG_ver_5.Android/packages/MonoGame.3.2.2

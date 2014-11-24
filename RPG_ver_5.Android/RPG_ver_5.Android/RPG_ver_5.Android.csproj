@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{528CB065-8E23-4138-968D-47BB269D0891}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPG_ver_5.Android</RootNamespace>
+    <AssemblyName>RPG_ver_5.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>
+    </AndroidUseLatestPlatformSdk>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <NuGetPackageImportStamp>b2384f5b</NuGetPackageImportStamp>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="MonoGame.Framework, Version=3.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MonoGame.Binaries.3.2.0\build\MonoAndroid\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\RPG_ver_5\RPG_ver_5\AssetManager.cs">
+      <Link>AssetManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\RPG_ver_5\RPG_ver_5\BehaviourFactory.cs">
+      <Link>BehaviourFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\RPG_ver_5\RPG_ver_5\EmitParticlesBehaviour.cs">
+      <Link>EmitParticlesBehaviour.cs</Link>
+    </Compile>
+    <Compile Include="..\..\RPG_ver_5\RPG_ver_5\Game1.cs">
+      <Link>Game1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\RPG_ver_5\RPG_ver_5\GameObject.cs">
+      <Link>GameObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\RPG_ver_5\RPG_ver_5\GameObjectFactory.cs">
+      <Link>GameObjectFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\RPG_ver_5\RPG_ver_5\HorizontalMoveBehaviour.cs">
+      <Link>HorizontalMoveBehaviour.cs</Link>
+    </Compile>
+    <Compile Include="..\..\RPG_ver_5\RPG_ver_5\IBehaviour.cs">
+      <Link>IBehaviour.cs</Link>
+    </Compile>
+    <Compile Include="..\..\RPG_ver_5\RPG_ver_5\IDrawable.cs">
+      <Link>IDrawable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\RPG_ver_5\RPG_ver_5\IUpdateable.cs">
+      <Link>IUpdateable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\RPG_ver_5\RPG_ver_5\JumpBehaviour.cs">
+      <Link>JumpBehaviour.cs</Link>
+    </Compile>
+    <Compile Include="..\..\RPG_ver_5\RPG_ver_5\ParticleSystem.cs">
+      <Link>ParticleSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\RPG_ver_5\RPG_ver_5\RandomBehaviour.cs">
+      <Link>RandomBehaviour.cs</Link>
+    </Compile>
+    <Compile Include="..\..\RPG_ver_5\RPG_ver_5\SingleLine.cs">
+      <Link>SingleLine.cs</Link>
+    </Compile>
+    <Compile Include="GameActivity.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="..\..\RPG_assets\bin\font.xnb">
+      <Link>Content\font.xnb</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\RPG_assets\bin\mouse.xnb">
+      <Link>Content\mouse.xnb</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\RPG_assets\bin\square.xnb">
+      <Link>Content\square.xnb</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\RPG_assets\bin\star.xnb">
+      <Link>Content\star.xnb</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidAsset>
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="..\..\RPG_assets\hit.wav">
+      <Link>Content\hit.wav</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\RPG_assets\jump.wav">
+      <Link>Content\jump.wav</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\RPG_assets\pickup.wav">
+      <Link>Content\pickup.wav</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\RPG_assets\Rolemusic_-_pl4y1ng.mp3">
+      <Link>Content\Rolemusic_-_pl4y1ng.mp3</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidAsset>
+    <Content Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\MonoGame.Binaries.3.2.0\build\MonoAndroid\MonoGame.Binaries.targets" Condition="Exists('..\packages\MonoGame.Binaries.3.2.0\build\MonoAndroid\MonoGame.Binaries.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MonoGame.Binaries.3.2.0\build\MonoAndroid\MonoGame.Binaries.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MonoGame.Binaries.3.2.0\build\MonoAndroid\MonoGame.Binaries.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
