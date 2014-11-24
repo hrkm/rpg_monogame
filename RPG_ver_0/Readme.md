@@ -55,7 +55,7 @@ Ta wersja metody Draw dodatkowo umożliwia podanie obrotu grafiki, punktu wzglę
 	
 ##Modyfikacja ustawień grafiki (np. rozdzielczość, orientacja ekranu)
 	
-1. W funkcji `Initialize` ustawiamy parametry ekranu
+1. W konstruktorze `Game1` ustawiamy parametry ekranu
 	
 ```
 graphics.PreferredBackBufferWidth = 480;
