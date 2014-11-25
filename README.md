@@ -13,6 +13,7 @@ Składa się z następujących części:
 * **RPG_ver_5** - obsługa myszy, obsługa ekranów dotykowych, rysowanie z przezroczystością, odtwarzanie dźwięków i muzyki
 * **RPG_ver_5.WP8** - tworzenie wersji dla platformy Windows Phone 8
 * **RPG_ver_5.Android** - tworzenie wersji dla platformy Android
+* **RPG_ver_6** - rysowanie niezależne od rozdzielczości urządzenia
 
 Kod źródłowy zamieszczony na tym repozytorium ma charakter edukacyjny. Autor ma świadomość, że niektóre z zastosowanych rozwiązań programistycznych nie są najlepsze i być może nie należy ich bezmyślnie powielać. Czasami jednak łatwiej jest przedstawić pewne aspekty nie przejmując się zasadami pisania "pięknego kodu" czy "genialnie zaprojektowanych aplikacji", stawiając na uzyskany efekt końcowy czyli działającą aplikację. Pamiętajcie: *zawsze jest czas na refaktoryzację!*
 
