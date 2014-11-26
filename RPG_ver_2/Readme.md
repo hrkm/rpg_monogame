@@ -1,7 +1,5 @@
 #RPG_ver_2 - zarządzanie teksturami, fabryka obiektów, fabryka zachowań, pierwsza wersja gry
 
-Uwaga: projekt RPG_ver_2 korzysta z folderu "packages" projektu RPG_ver_0 w celu zaoszczędzenia miejsca. W związku z tym zaleca się ściągnięcie całego repozytorium lub dodanie MonoGame przy pomocy NuGeta.
-
 ##Zarządzanie teksturami
 
 Z praktycznego punktu widzenia możemy posiadać wiele miejsc w naszej aplikacji, w których będziemy potrzebowali danej tekstury. Stąd trzymanie wszystkiego w klasie `Game1` jest trochę kłopotliwe. Z tego powodu proponuję użyć następującej klasy typu Singleton do zarządzania teksturami oraz innymi zasobami:

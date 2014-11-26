@@ -1,7 +1,5 @@
 #RPG_ver_1 - wprowadzenie klasy `GameObject`, ulepszenie skakania, więcej obiektów na ekranie, prosty system kolizji
 
-Uwaga: projekt RPG_ver_1 korzysta z folderu "packages" poprzedniego projektu w celu zaoszczędzenia miejsca. W związku z tym zaleca się ściągnięcie całego repozytorium lub dodanie MonoGame przy pomocy NuGeta.
-
 ##Klasa `GameObject`
 
 Zauważyliśmy być może w RPG_ver_0, że w celu narysowania czegoś na ekranie musimy podać całkiem sporo różnych parametrów. W związku z tym ułatwimy sobie to zadanie w przyszłości i utworzymy klasę `GameObject`:

@@ -1,7 +1,5 @@
 #RPG_ver_3 - nowe interfejsy, system cząsteczek
 
-Uwaga: projekt RPG_ver_3 korzysta z folderu "packages" projektu RPG_ver_0 w celu zaoszczędzenia miejsca. W związku z tym zaleca się ściągnięcie całego repozytorium lub dodanie MonoGame przy pomocy NuGeta.
-
 ##Nowe interfejsy
 
 Zauważyliście pewnie, że wiele obiektów posiada metody `Update` oraz `Draw`? To przykład kiedy warto zainteresować się utworzeniem odpowiednich interfejsów dla tych dwóch typów, ponieważ później łatwiej będzie nam korzystać z listy obiektów implementujących wspólny interfejs, ale niekoniecznie będących pochodnymi tej samej klasy.

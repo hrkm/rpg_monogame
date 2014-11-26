@@ -1,7 +1,5 @@
 #RPG_ver_6 - rysowanie niezależne od rozdzielczości urządzenia
 
-Uwaga: projekt RPG_ver_6 korzysta z folderu "packages" projektu RPG_ver_0 w celu zaoszczędzenia miejsca. W związku z tym zaleca się ściągnięcie całego repozytorium lub dodanie MonoGame przy pomocy NuGeta.
-
 ##Rysowanie niezależne od rozdzielczości urządzenia
 
 Jeśli uruchomiliście projekt w wersji 5 na urządzeniu mobilnym z wyższą rozdzielczością niż 480x800, to zauważyliście być może że aplikacja nie renderuje się na całym ekranie, a jedynie w obszarze odpowiadającym właśnie rozdzielczości, którą ustawiliśmy. Wynika to z tego, że mimo ustawienia `PreferredBackBufferWidth` i `PreferredBackBufferHeight` na urządzeniach mobilnych rozdzielczość ekranu będzie ustawiona na tą, która jest po prostu w urządzeniu wykorzystywana, np. 720x1280. Musimy zatem zapewnić, aby nasza gra zawsze była renderowana na całym dostępnym obszarze przez przeskalowanie obrazu. Efekt ten uzyskamy przez wprowadzenie dwóch klas pomocniczych: `ResolutionIndependentRenderer` oraz `Camera2D`.

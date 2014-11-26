@@ -1,7 +1,5 @@
 #RPG_ver_5 - obsługa myszy, obsługa ekranów dotykowych, rysowanie z przezroczystością, odtwarzanie dźwięków i muzyki
 
-Uwaga: projekt RPG_ver_5 korzysta z folderu "packages" projektu RPG_ver_0 w celu zaoszczędzenia miejsca. W związku z tym zaleca się ściągnięcie całego repozytorium lub dodanie MonoGame przy pomocy NuGeta.
-
 ##Obsługa myszy
 
 Dodajemy do projektu plik "mouse.xnb", który przedstawia kursor myszki i dodajemy odpowiedni wpis do klasy `AssetManager` do załadowania tej tekstury do pamięci.
