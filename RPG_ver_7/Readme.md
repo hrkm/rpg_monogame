@@ -360,4 +360,4 @@ public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
 }
 ```
 
-Po uruchomieniu gry naszym oczom powinien się ukazać "piękny" efekt paralaksy i gra oczywiście staje się trochę trudniejsza, bo drzewa z pierwszego planu zasłaniają przeszkody. :)
+Po uruchomieniu gry naszym oczom powinien się ukazać ["piękny" efekt paralaksy](http://youtu.be/mkWRODw92g8) i gra oczywiście staje się trochę trudniejsza, bo drzewa z pierwszego planu zasłaniają przeszkody. :)
