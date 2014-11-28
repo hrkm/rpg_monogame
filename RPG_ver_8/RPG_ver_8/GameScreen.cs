@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework.Input;
 namespace RPG_ver_8
 {
     /// <summary>
-    /// To jest g³ówna klasa aplikacji
+    /// To jest g³ówny ekran rozgrywki
     /// </summary>
     public class GameScreen : IScreen
     {
