@@ -17,6 +17,7 @@ Składa się z następujących części:
 * **RPG_ver_7** - refaktoryzacja zachowań, renderowanie do tekstury, efekt paralaksy
 * **RPG_ver_8** - interfejs ekranu gry, ekran głównej rozgrywki, główna klasa aplikacji bez elementów rozgrywki
 * **RPG_ver_9** - menu gry, zachowania dla parametrów liczbowych
+* **RPG_ver_10** - usuwanie zakończonych zachowań, "wskrzeszenie gracza" jako dodatkowa mechanika gry, ekran końca gry
 
 Kod źródłowy zamieszczony na tym repozytorium ma charakter edukacyjny. Autor ma świadomość, że niektóre z zastosowanych rozwiązań programistycznych nie są najlepsze i być może nie należy ich bezmyślnie powielać. Czasami jednak łatwiej jest przedstawić pewne aspekty nie przejmując się zasadami pisania "pięknego kodu" czy "genialnie zaprojektowanych aplikacji", stawiając na uzyskany efekt końcowy czyli działającą aplikację. Pamiętajcie: *zawsze jest czas na refaktoryzację!*
 
